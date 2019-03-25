@@ -10,6 +10,7 @@ public class ExperimentalObject {
 		System.out.println(getPrimeFactorDecomposition(1));
 		System.out.println(getPrimeFactorDecomposition(2));
 		System.out.println(getPrimeFactorDecomposition(6));
+		System.out.println(getPrimeFactorDecomposition(8));
 		System.out.println(getPrimeFactorDecomposition(5));
 		System.out.println(getPrimeFactorDecomposition(15));
 		System.out.println(getPrimeFactorDecomposition(99));
@@ -26,7 +27,7 @@ public class ExperimentalObject {
 
 		int testDigit = 2;
 		while (number >= testDigit) {
-			if (number % testDigit == 0) {
+			while (number % testDigit == 0) {
 				list.add(testDigit);
 				number = number / testDigit;
 			}
